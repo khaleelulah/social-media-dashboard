@@ -123,6 +123,7 @@ input:checked+.theme-selector .circle {
     border-radius: 5px;
     margin-top: 36px;
     cursor: pointer;
+    box-shadow: 0 4px 5px -2px #445566;
 }
 
 .card:hover {

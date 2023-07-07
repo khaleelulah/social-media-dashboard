@@ -2,7 +2,7 @@
 const bodyEl = document.querySelector("body");
 const selectorbtn = document.querySelector(".theme-selector");
 
-
+const selectorText = document.querySelector(".selectorText")
 const inputEl = document.querySelector("input")
 inputEl.checked = JSON.parse(localStorage.getItem("mode"));
 
@@ -11,8 +11,10 @@ changeTheme();
 function changeTheme() {
     if (inputEl.checked) {
         bodyEl.classList.add("light-mode")
+        selectorText.innerText = "Light-mode"
     } else {
         bodyEl.classList.remove("light-mode")
+        selectorText.innerText = "Dark-mode"
     }
 }
 
